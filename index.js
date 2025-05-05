@@ -6,7 +6,7 @@ mobileMenuButton.addEventListener('click', () => {
 });
 
 const typingText = document.getElementById('typing-text');
-const roles = ['Full Stack Developer', 'Software Engineer', 'Problem Solver'];
+const roles = ['Developer', 'Software Engineer', 'Problem Solver'];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
