@@ -70,22 +70,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission
-const contactForm = document.getElementById('contact-form');
-const formSuccess = document.getElementById('form-success');
-const formError = document.getElementById('form-error');
-
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    setTimeout(() => {
-        contactForm.reset();
-        formSuccess.classList.remove('hidden');
-        
-        setTimeout(() => {
-            formSuccess.classList.add('hidden');
-        }, 5000);
-    }, 1000);
-});
 footer = new Date().getFullYear();
 document.querySelector('.footer').innerHTML = `&copy; ${footer} All rights reserved.`;
