@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeterDeveloper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">ByteKernel</span>
+                    <img src="/images/personal-logo.png" alt="Logo" class="h-8 w-8 ml-2">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-slate-300 hover:text-white active">Home</a>
+                    <a href="#about" class="nav-link text-slate-300 hover:text-white">About</a>
+                    <a href="#skills" class="nav-link text-slate-300 hover:text-white">Skills</a>
+                    <a href="#projects" class="nav-link text-slate-300 hover:text-white">Projects</a>
+                    <a href="#contact" class="nav-link text-slate-300 hover:text-white">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-slate-300 hover:text-white focus:outline-none" title="Toggle Menu">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-md">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Skills</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Projects</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-20 md:pt-32 md:pb-28 lg:pt-40 lg:pb-32">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                        Hi, I'm <span class="gradient-text">Peter</span>
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 text-slate-300">
+                        Developer.
+                    </h2>
+                    <p class="text-lg text-slate-400 mb-8 max-w-lg">
+                        I build robust, scalable, and efficient server-side applications that power modern web experiences.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-md text-white font-medium hover:opacity-90 transition">
+                            Contact Me
+                        </a>
+                        <a href="#projects" class="px-6 py-3 border border-slate-600 rounded-md text-white font-medium hover:bg-slate-800 transition">
+                            View Work
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full opacity-20 blur-3xl"></div>
+                        <div class="relative w-full h-full flex items-center justify-center">
+                            <div class="w-3/4 h-3/4 bg-slate-800 rounded-full flex items-center justify-center border-2 border-slate-700">
+                                <img src="/images/peter.png" alt="peter" class="w-full h-full object-cover rounded-full shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">About Me</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6"></div>
+                <p class="text-lg text-slate-400 max-w-3xl mx-auto">
+                    Get to know more about who I am and what I do.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <div class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-slate-700">
+                        <div class="absolute inset-0 bg-gradient-to-r opacity-20"></div>
+                        <img src="/images/peter.png" alt="Peter" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-6">Who am I?</h3>
+                    <p class="text-slate-400 mb-6">
+                        I'm Peter, a passionate backend developer with expertise in building scalable and efficient server-side applications. 
+                        I love solving complex problems and creating robust systems that power modern web applications.
+                    </p>
+                    <p class="text-slate-400 mb-6">
+                        With a strong foundation in computer science and years of hands-on experience, I specialize in designing and implementing 
+                        APIs, databases, and server architectures that can handle millions of requests while maintaining performance and reliability.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                        <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card-hover">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-server text-blue-400"></i>
+                                </div>
+                                <h4 class="text-lg font-medium">Backend Development</h4>
+                            </div>
+                            <p class="text-slate-400">
+                                Building robust APIs, microservices, and server-side logic that powers modern applications.
+                            </p>
+                        </div>
+                        <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card-hover">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-database text-indigo-400"></i>
+                                </div>
+                                <h4 class="text-lg font-medium">Database Design</h4>
+                            </div>
+                            <p class="text-slate-400">
+                                Designing efficient database schemas and optimizing queries for performance and scalability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">My Skills</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6"></div>
+                <p class="text-lg text-slate-400 max-w-3xl mx-auto">
+                    Technologies I work with to build powerful backend systems
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Skill 1 -->
+                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-500/10 rounded-full flex items-center justify-center">
+                        <i class="fab fa-node-js text-3xl text-blue-400"></i>
+                    </div>
+                    <h4 class="text-lg font-medium mb-2">Node.js</h4>
+                    <p class="text-slate-400 text-sm">
+                        Building scalable server-side applications with JavaScript runtime.
+                    </p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-500/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-leaf text-3xl text-green-400"></i>
+                    </div>
+                    <h4 class="text-lg font-medium mb-2">Express</h4>
+                    <p class="text-slate-400 text-sm">
+                        Fast, unopinionated web framework for Node.js applications.
+                    </p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-red-500/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-database text-3xl text-red-400"></i>
+                    </div>
+                    <h4 class="text-lg font-medium mb-2">MongoDB</h4>
+                    <p class="text-slate-400 text-sm">
+                        NoSQL database for flexible, scalable data storage.
+                    </p>
+                </div>
+                <!-- Skill 4 -->
+                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-500/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-database text-3xl text-blue-400"></i>
+                    </div>
+                    <h4 class="text-lg font-medium mb-2">PostgreSQL</h4>
+                    <p class="text-slate-400 text-sm">
+                        Powerful, open-source relational database system.
+                    </p>
+                </div>
+                <!-- Skill 5 -->
+                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-yellow-500/10 rounded-full flex items-center justify-center">
+                        <i class="fab fa-python text-3xl text-yellow-400"></i>
+                    </div>
+                    <h4 class="text-lg font-medium mb-2">Python</h4>
+                    <p class="text-slate-400 text-sm">
+                        Versatile programming language for backend development.
+                    </p>
+                </div>
+                <!-- Skill 6 -->
+                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-purple-500/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-3xl text-purple-400"></i>
+                    </div>
+                    <h4 class="text-lg font-medium mb-2">Cybersecurity</h4>
+                    <p class="text-slate-400 text-sm">
+                        Implementing security best practices and threat mitigation.
+                    </p>
+                </div>
+                <!-- Skill 7 -->
+                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-500/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-database text-3xl text-green-400"></i>
+                    </div>
+                    <h4 class="text-lg font-medium mb-2">Prisma ORM</h4>
+                    <p class="text-slate-400 text-sm">
+                        Next-generation Node.js and TypeScript ORM for databases.
+                    </p>
+                </div>
+                <!-- Skill 8 -->
+                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-500/10 rounded-full flex items-center justify-center">
+                        <i class="fab fa-docker text-3xl text-green-400"></i>
+                    </div>
+                    <h4 class="text-lg font-medium mb-2">Docker</h4>
+                    <p class="text-slate-400 text-sm">
+                        Containerization for consistent development environments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">My Projects</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6"></div>
+                <p class="text-lg text-slate-400 max-w-3xl mx-auto">
+                    Some of my recent backend development projects
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden border border-slate-700 card-hover">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center">
+                        <i class="fas fa-server text-6xl text-white opacity-20"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce API</h3>
+                        <p class="text-slate-400 mb-4">
+                            A robust RESTful API for an e-commerce platform with product management, user authentication, and payment processing.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-green-500/10 text-green-400 rounded-full text-xs">Express</span>
+                            <span class="px-3 py-1 bg-red-500/10 text-red-400 rounded-full text-xs">MongoDB</span>
+                            <span class="px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full text-xs">JWT</span>
+                        </div>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden border border-slate-700 card-hover">
+                    <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center">
+                        <i class="fas fa-comments text-6xl text-white opacity-20"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Real-time Chat API</h3>
+                        <p class="text-slate-400 mb-4">
+                            A scalable real-time chat application backend with WebSocket support for instant messaging and notifications.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-xs">Socket.io</span>
+                            <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full text-xs">Redis</span>
+                        </div>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden border border-slate-700 card-hover">
+                    <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-6xl text-white opacity-20"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Analytics Service</h3>
+                        <p class="text-slate-400 mb-4">
+                            A high-performance analytics backend that processes and aggregates large volumes of user interaction data.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full text-xs">Python</span>
+                            <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">FastAPI</span>
+                            <span class="px-3 py-1 bg-green-500/10 text-green-400 rounded-full text-xs">Kafka</span>
+                            <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">BigQuery</span>
+                        </div>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://github.com/p3ter-dev" class="px-6 py-3 border border-slate-600 rounded-md text-white font-medium hover:bg-slate-800 transition inline-flex items-center">
+                    View All Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">Get In Touch</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6"></div>
+                <p class="text-lg text-slate-400 max-w-3xl mx-auto">
+                    Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <p class="text-slate-400 mb-8">
+                        I'm currently open to new opportunities and interesting projects. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-envelope text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium mb-1">Email</h4>
+                                <a href="mailto:peter@example.com" class="text-slate-400 hover:text-blue-400">peter@example.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/10 flex items-center justify-center mr-4 mt-1">
+                                <i class="fab fa-linkedin-in text-indigo-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium mb-1">LinkedIn</h4>
+                                <a href="#" class="text-slate-400 hover:text-blue-400">linkedin.com/in/peter-dev</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center mr-4 mt-1">
+                                <i class="fab fa-github text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium mb-1">GitHub</h4>
+                                <a href="#" class="text-slate-400 hover:text-blue-400">github.com/p3ter-dev</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="bg-slate-800/50 p-8 rounded-lg border border-slate-700" action="/contact" method="POST">
+                        <div class="mb-6">
+                            <label for="name" class="block text-slate-300 mb-2">Name</label>
+                            <input type="text" id="name" name="name"class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-slate-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-slate-300 mb-2">Message</label>
+                            <textarea id="message" rows="5" name="message" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-md text-white font-medium hover:opacity-90 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900/80 border-t border-slate-800 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-2xl font-bold gradient-text">ByteKernel</span>
+                </div>
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#" class="text-slate-400 hover:text-blue-400" title="GitHub">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-blue-400" title="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-blue-400" title="Twitter Profile">
+                        <span class="sr-only">Twitter</span>
+                        <i class="fab fa-twitter text-xl"></i>
+                    <a href="#" class="text-slate-400 hover:text-blue-400" title="Dev Profile">
+                        <span class="sr-only">Dev Profile</span>
+                        <i class="fab fa-dev text-xl"></i>
+                    </a>
+                </div>
+                <div class="text-slate-400 text-sm footer">
+                    &copy;All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
