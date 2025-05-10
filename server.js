@@ -38,7 +38,7 @@ server.post('/contact', async (req, res) => {
             }
         });
         res.status(200).render('feedback',{ name: 
-            req.body.name 
+            req.body.name
         });
         console.log('contact saved: ', newMessage);
     } catch (error) {
