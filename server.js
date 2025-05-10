@@ -6,8 +6,8 @@ const server = express();
 const port = 3000;
 const path = require('path');
 
-server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
+server.use(bodyParser.json());
 server.set('view engine', 'ejs');
 server.set('views', path.join(__dirname, 'views'));
 server.use(express.static(path.join(__dirname)));
@@ -37,14 +37,10 @@ server.post('/contact', async (req, res) => {
                 message
             }
         });
-        console.log('contact saved: ', newMessage);
-        res.status(200).json({ message: 'Message sent successfully' });
-        res.render('feedback.ejs', (error) => {
-            if(error) {
-                console.error('Error sending file:', error);
-                res.status(500).send('Internal Server Error');
-            }
+        res.status(200).render('feedback',{ name: 
+            req.body.name
         });
+        console.log('contact saved: ', newMessage);
     } catch (error) {
         console.error('Error processing form:', error);
         return res.status(500).json({ error: 'Internal Server Error' });
