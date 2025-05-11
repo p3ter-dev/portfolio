@@ -52,3 +52,33 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
