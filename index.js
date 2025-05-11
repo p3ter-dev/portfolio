@@ -56,3 +56,9 @@ window.addEventListener('scroll', function() {
 
 footer = new Date().getFullYear();
 document.querySelector('.footer').innerHTML = `&copy; ${footer} Peter. All rights reserved.`;
+
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+    });
+});
