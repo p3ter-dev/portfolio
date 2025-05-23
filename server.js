@@ -44,7 +44,9 @@ server.post('/contact', async (req, res) => {
         console.log('contact saved: ', newMessage);
     } catch (error) {
         console.error('Error processing form:', error);
-        return res.status(500).json({ error: 'Internal Server Error' });
+        return res.status(500).render('views/500', {
+            title: 'server error',
+        });
     }
 });
 
