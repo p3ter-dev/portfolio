@@ -44,17 +44,10 @@ server.post('/contact', async (req, res) => {
         console.log('contact saved: ', newMessage);
     } catch (error) {
         console.error('Error processing form:', error);
-        return res.status(500).render('views/500', {
+        return res.status(500).render('500', {
             title: 'server error',
         });
     }
-});
-
-server.use((err, req, res, next) => {
-  console.error(err);
-  res.status(500).render('views/500', {
-    title: 'server error',
-  });
 });
 
 server.listen(port, () => {
