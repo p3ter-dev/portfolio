@@ -5,6 +5,7 @@ const prisma = new PrismaClient();
 const server = express();
 const port = 3000;
 const path = require('path');
+require('./database/dbConfig')
 
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
