@@ -48,6 +48,13 @@ server.post('/contact', async (req, res) => {
     }
 });
 
+server.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).render('views/500', {
+    title: 'server error',
+  });
+});
+
 server.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
