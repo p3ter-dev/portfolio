@@ -1,4 +1,3 @@
-// Mobile menu toggle
 document.getElementById('menu-toggle').addEventListener('click', function() {
     const mobileMenu = document.getElementById('mobile-menu');
     mobileMenu.classList.toggle('hidden');
@@ -13,7 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.querySelector(targetId);
         
         if (targetElement) {
-            // Close mobile menu if open
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.add('hidden');
             
@@ -23,7 +21,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth'
             });
             
-            // Update active nav link
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
             });
@@ -32,7 +29,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Update active nav link on scroll
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
     let currentSection = '';
