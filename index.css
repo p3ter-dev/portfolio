@@ -28,7 +28,6 @@ body {
 }
 
 .nav-link::after {
-    content: '';
     position: absolute;
     width: 0;
     height: 2px;
