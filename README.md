@@ -1,5 +1,3 @@
-# portfolio
-
-# this is the deployed web app
+# portfolio web
 
 # https://peter-portfolio.onrender.com
