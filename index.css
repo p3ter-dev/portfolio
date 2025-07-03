@@ -13,10 +13,19 @@ body {
 }
 
 .image-hover:hover {
-    transform: scale(1.05) rotate(2deg);
+    transform: scale(1.05) rotate(5deg);
     box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
 }
 
+.image-container-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.image-container-hover:hover {
+    transform: scale(1.05) rotate(0deg);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
 
 .gradient-text {
     background: linear-gradient(90deg, #3b82f6, #8b5cf6);
