@@ -7,6 +7,17 @@ body {
     scroll-behavior: smooth;
 }
 
+.image-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.image-hover:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+
 .gradient-text {
     background: linear-gradient(90deg, #3b82f6, #8b5cf6);
     -webkit-background-clip: text;
