@@ -51,5 +51,5 @@ server.post('/contact', async (req, res) => {
 });
 
 server.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    console.log(`server is running on http://localhost:${port}`);
 });
